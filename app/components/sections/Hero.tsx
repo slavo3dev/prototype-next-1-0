@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
 import { Container } from "@/components";
+import { trackEvent } from "@/lib";
 
 export function Hero() {
   return (
@@ -21,8 +23,9 @@ export function Hero() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/contact"
-              className="rounded-full bg-blue-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-600"
+            href="/contact"
+            onClick={() => trackEvent("start_project_click", { location: "hero" })}
+            className="rounded-full bg-blue-500 px-6 py-3 text-sm font-medium text-white transition hover:bg-blue-600"
             >
               Start a Project
             </Link>
