@@ -6,3 +6,4 @@ export * from "./sections/Hero";
 export * from "./sections/ServicesGrid";
 export * from "./sections/ProductsPreview";
 export * from "./sections/CTASection";
+export * from "./forms/ContactForm";
