@@ -1,4 +1,5 @@
-import { Container, SectionHeading } from "@/components";
+// src/app/contact/page.tsx
+import { Container, SectionHeading, ContactForm } from "@/components";
 
 export default function ContactPage() {
   return (
@@ -9,6 +10,8 @@ export default function ContactPage() {
           title="Let’s talk about your next project"
           description="Tell me what you’re building, where you are stuck, or what kind of system or product you want to launch."
         />
+
+        <ContactForm />
       </Container>
     </main>
   );
